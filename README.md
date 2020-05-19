@@ -18,8 +18,13 @@ There are several different types of Javascript data structures. These include s
 _____________________________________________________________________
 /////////////////////  Javascript Recursion  ////////////////////////
 We use a recursive function when we want a function call itself until we dont want it too. This could be finite, or infinitely. Generally when we write a recursive function, we
-will include a condition so that we can stop the recursion. If we were to miss out this condition, the function will loop indefinitely. A general way that we can write it so that
-it doesnt repeat indefinitely. looks like this:
+will include a condition so that we can stop the recursion. If we were to miss out this condition, the function will loop indefinitely. 
+
+The data structure that uses recursion is "Stack." Since Stack uses the LIFO (Last-in, First-out) method, it remembers its caller. because of this knowledge, Stack is able to know who
+to return too when we call the function to do so. The recursion method makes good use of the system stack method for when it wants too store and return adresses of calls that have been 
+made by the function. In doing this, the code can continue from where it left off.
+
+A general way that we can write it so that it doesnt repeat indefinitely. looks like this:
 
 function recurse() {
     if(condition) {
@@ -527,3 +532,5 @@ Fawcett, R. T. A. A. (2020, March 20). 7 JavaScript data structures you must kno
 Zakas, N. C. (2019, January 8). Computer science in JavaScript: Linked list. Retrieved from https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/
 
 Real-world examples of recursion. (2008, September 19). Retrieved from https://stackoverflow.com/questions/105838/real-world-examples-of-recursion
+
+JavaScript data types and data structures. (2020, May 11). Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures

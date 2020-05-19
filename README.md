@@ -2,17 +2,15 @@
 
 Introduction to Javascript Data Structure
 
-We use data structures when we want  to store and organise data. When we do this, we can make this stored data easier to access, navigate and modify.
-Depending on what structure we use, we can sort and store the data in a vairety of different ways. We use data structures in a variety of ways, and is used all
-throughout computer systems. Advantages of using data structures includes ease in managing and utilizing large datasets, navigate and find specific data
-withing a database easier, and to simplify and speed up overall data processing.
+We use data structures when we want to store and organise data. When we do this, we can make this stored data easier to access, navigate and modify.
+Depending on what structure we use, we can sort and store the data in a variety of different ways. We use data structures in a variety of ways and is used all
+throughout computer systems. Advantages of using data structures include ease in managing and utilising large datasets, navigate and find specific data
+within a database easier, and to simplify and speed up overall data processing.
 
-The use of data structures is very important in real world practise if we want an effective and efficient workflow. Use of data structures can assisnt in 
-management and problem solving withing systems. The better we can organise, the easier and more efficient it is to find and modify data. Within Javascript, there
-are two data structures. These structures being primitive and non-primitive. The main difference between the two is that the primitive data structure and data types
-are native to javascript. This means that they include such things as boolean, null, number, string, etc. Whereas a non-primitive data structure or data type is the 
-opposite. The types are definced by the programmer, rather than the javascript language. This means that they include things such as linear data structures, static 
-data structures, and dynamic data structures.
+The use of data structures is very important in real-world practise if we want an effective and efficient workflow. Use of data structures can assist in management and problem solving withing systems.
+The better we can organise, the easier and more efficient it is to find and modify data. Within Javascript, there are two data structures. These structures being primitive and non-primitive. 
+The main difference between the two is that the primitive data structure and data types are native to javascript. This means that they include such things as boolean, null, number, string, etc. 
+Whereas a non-primitive data structure or data type is the opposite. The types are defined by the programmer, rather than the javascript language. This means that they include things such as linear data structures, static data structures, and dynamic data structures.
 
 There are several different types of Javascript data structures. These include structures such as Stack, Queue, linked list, Hash tables and trees.
 _____________________________________________________________________
@@ -20,11 +18,10 @@ _____________________________________________________________________
 We use a recursive function when we want a function call itself until we dont want it too. This could be finite, or infinitely. Generally when we write a recursive function, we
 will include a condition so that we can stop the recursion. If we were to miss out this condition, the function will loop indefinitely. 
 
-The data structure that uses recursion is "Stack." Since Stack uses the LIFO (Last-in, First-out) method, it remembers its caller. because of this knowledge, Stack is able to know who
-to return too when we call the function to do so. The recursion method makes good use of the system stack method for when it wants too store and return adresses of calls that have been 
-made by the function. In doing this, the code can continue from where it left off.
+The data structure that uses recursion is "Stack." Since Stack uses the LIFO (Last-in, First-out) method, it remembers its caller. Because of this knowledge, Stack is able to know whom
+to return too when we call the function to do so. The recursion method makes good use of the system stack method for when it wants to store and return addresses of calls that have been made by the function. In doing this, the code can continue from where it left off.
 
-A general way that we can write it so that it doesnt repeat indefinitely. looks like this:
+A general way that we can write it so that it doesn't repeat indefinitely. looks like this:
 
 function recurse() {
     if(condition) {
@@ -34,7 +31,7 @@ function recurse() {
 }
 We use these functions when we want to break down a larger issue into smaller ones. We will generally find recurse functions in binary structures such as Binary search trees or
 graphs, or in algorithms such as binary search and quicksort. We can use recurse functions for a variety of tasks such as decreasing a value from a specified number. If we want to count down
-from a specifc number, we can write it like this (executable code in recursive.js):
+from a specific number, we can write it like this (executable code in recursive.js):
 
 function recursiveFunc(myNumber) {
     
@@ -49,41 +46,41 @@ recursiveFunc(10);
 
 
 PSEUDO code:
-Create recursive function with paramater
+Create a recursive function with parameter
 create a new variable, and let it equal the parameter minus 1
 if the statement "new variable is greater than 0" is true, repeat
 end
 console log parameter
 end
-call function with set value of parameter
+call function with a set value of the parameter
 
 Advantages and disadvantages of recursion
  There are a few advantages and disadvantages of recursion. These include:
 
  Advantages
  It makes the algorithm easier for problems like tree traversal
- Makes things easier to visualize 
+ Makes things easier to visualise 
  It is the unique way of implementing a variable number of nested loops
  Can reduce time to write and debug code
 
  Disadvantages
  Recursion is generally slower
- Takes up more of the stack
+ Takes up more of the Stack
  Will generally use more memory
- Every recursive call causes the stack to increase
- Large stack can cause crashes (crash the program)
+ Every recursive call causes the Stack to increase
+ Large Stack can cause crashes (crash the program)
  Can often throw the StackOverflowException error when trying to process large sets
 
- //Real world uses
- We can use recursion with directory structure within a file system. We can use this method to find files, create directories, delete files and so on
+ //Real-world uses
+ We can use recursion with directory structure within a file system. We can use this method to find files, create directories, delete files and so on.
 
- Collision detecion in game development (Binary Space Partitioning(BSP) trees)
+ Collision detection in game development (Binary Space Partitioning(BSP) trees)
 
  Functional programming Languages
 
- XML, or anything that involves traversin a tree
+ XML, or anything that involves traversing a tree
 
- Building a CMS for a website. Travesing from sub-pages back to the root (which could be the home page)
+ Building a CMS for a website. Traversing from sub-pages back to the root (which could be the home page)
 
  Looking up words in a dictionary
 
@@ -94,14 +91,13 @@ Advantages and disadvantages of recursion
 _____________________________________________________________________
 //////////////////////////  Linked List  ////////////////////////////
 
-Linked Lists are quite different from the previous examples. In this structure type, items are organised sequentially. In these sequences, the items all point to the
- next item in the link. Within this structure, each node contains data and the next value. Linked list does not use a physical placement of data within its memory. As stated
- before, we use a referencing system to organise the data. This means that we arent identifying the position or the index of each node within the list. Using this method allows
- us to add and remove items from the list without having too rearrange the contents within the structure. The data stored within the list is in a linear fashion. Within each
- of the nodes there is also a link to the next node in the list. There are two types of lists that we can have, singly and doubly linked lists. A single linked list only contains
- one pointer to another node, whereas a doubly linked list contains two pointers (generally previous and next).
+Linked Lists are quite different from the previous examples. In this structure type, items are organised sequentially. In these sequences, the items all point to the next item in the link. Within this structure, 
+each node contains data and the next value. Linked list does not use a physical placement of data within its memory. As stated before, we use a referencing system to organise the data. This means that we aren't 
+identifying the position or the index of each node within the list. Using this method allows us to add and remove items from the list without having to rearrange the contents within the structure. The data stored 
+within the list is in a linear fashion. Within each of the nodes, there is also a link to the next node in the list. There are two types of lists that we can have, singly and doubly-linked lists. A single linked list only contains
+ one pointer to another node, whereas a doubly-linked list, contains two pointers (generally previous and next).
 
- There are a few advantages and disadvantages of the linked list data structure. These include:
+ There are a few advantages and disadvantages to the linked list data structure. These include:
 
 Advantages:
 Efficient insertion and removal of new elements
@@ -169,7 +165,7 @@ PSEUDO code:
 Create a class that represents each of the nodes in the list "class Node{"
 constructor(argument one, argument two)
 identify data as an argument 
-identify next as a argument
+identify next as an argument
 end
 Create a class that represents each of the nodes in the list "class LinkedList{"
 constructor()
@@ -206,13 +202,13 @@ Maintaining Directory names
 Performing arithmetic operations on long integers
 
 Examples of use could include things such as a previous and next page in a web browser.
-Other examples include music players with their previous and last song, and adding new songs to the queue
+Other examples include music players with their previous and last song and adding new songs to the queue.
 
 ______________________________________________________________
 /////////////////////////  Stack  ////////////////////////////
 
-The first type that I will discuss is stack. Stack uses a method that is known as Last in - First out (LIFO). This is where the last item/method that you pushed too 
-the stack becomes the first part that is removed.
+The first type that I will discuss is Stack. Stack uses a method that is known as Last in - First out (LIFO). This is where the last item/method that you pushed too 
+the Stack becomes the first part that is removed.
 
   Push                   Pop
  [  A  ] -> [-TOP--] -> [  A  ]
@@ -299,19 +295,19 @@ class Stack{
 
     
 }
-When would we use stack?
+When would we use Stack?
 During function calls
 Evaluating an expression
 Converting an Infix to a Postfix
-Depth first search (DFS)
+Depth-first search (DFS)
 Scheduling Algorithms
 
 _______________________________________________________________
 //////////////////////////  Queue  ////////////////////////////
 
 
-Queue is similar to that of stack. The only key difference is that it follows a method known as first-in, first-out (FIFO). This means that the first item that is 
-pushed is the first one that will be removed. Another noticeable difference to stack is that we use an array rather than an object.
+Queue is similar to that of Stack. The only key difference is that it follows a method known as first-in, first-out (FIFO). This means that the first item that is 
+pushed is the first one that will be removed. Another noticeable difference to Stack is that we use an array rather than an object.
 
 We can look at a queue data structure like this:
 
@@ -379,7 +375,7 @@ var queue = new Queue(); //Creates an object for the queue class
 
 console.log(queue.dequeue()); //Test dequeue and pop on an empty queue 
 
-//This line returns true since we havent added anything to the queue yet
+//This line returns true since we haven't added anything to the queue yet
 console.log(queue.isEmpty()); 
 
 //The six lines below adds values to the queue
@@ -410,7 +406,7 @@ returns the front element of the queue
 end
 Returns true if the queue is empty
 end
-Returns all the elements of an queue
+Returns all the elements of a queue
 end
 Create an object for the queue class
 
@@ -422,10 +418,9 @@ console log desired outcomes
 
 
 Applications of Queue
-We use queue whenever we want to organise a group of items in order from first in to last, where the first one that comes in is the first one out. You can imagine
- this like people lining up. The person that is first in the line was the first person to line up. This means that they will be the first to leave the line. Another
-  place this idea can be used is in printing files at a printer. if a bunch of people were to send their files at various times, the queue would be in sequence 
-  of who was fastest, second fastest, and so on
+We use queue whenever we want to organise a group of items in order from first in to last, where the first one that comes in is the first one out. You can imagine this like people lining up.
+ The person that is first in the line was the first person to line up. This means that they will be the first to leave the line. Another place this idea can be used is in printing files at a printer.
+  if a bunch of people were to send their files at various times, the queue would be in sequence of who was fastest, second fastest, and so on.
 
 _____________________________________________________________________
 //////////////////////////  Hash Tables  ////////////////////////////
@@ -466,12 +461,12 @@ class HashTable {
 }
 
 PSEUDO code:
-create class for hashtable
+create a class for hashtable
 end
 insert values
 end
-Create function for hash
-set the default value of sum be 0
+Create a function for hash
+set the default value of sum to be 0
 increment the value of i by one until the length of the string is met
 Add the value of i multiplied by three to sum(0)
 end
@@ -489,10 +484,10 @@ Linking a file name and path together
 _____________________________________________________________________
 //////////////////////////  Binary Trees  ///////////////////////////
 
-The final structure that I am going to discuss is trees or Binary search trees. When talking about trees, there are two main parts, the parent
- and the child. The parent is where the children branch off from, but can also be a child to a previous node. A child is what is branched off 
- from a parent node. A child does not necessarily have to have a node branched off from it, whereas a parent needs to be classed as a parent. 
- There is a third party which is the start of the tree; this is known as the root. A root does not have a parent.
+The final structure that I am going to discuss is trees or Binary search trees. When talking about trees, there are two main parts, the parent and the child. 
+The parent is where the children branch off from, but can also be a child to a previous node. A child is what is branched off from a parent node. A child does 
+not necessarily have to have a node branched off from it, whereas a parent needs to be classed as a parent. There is a third party which is the start of the tree; 
+this is known as the root. A root does not have a parent.
 
 This is represented like this:
 
@@ -515,7 +510,7 @@ This is represented like this:
 References
 Bazalev, N., Dave, Ryan, P., Milos, & Evgeniia. (2020, February 20). Know your JavaScript data structures. Retrieved from https://blog.logrocket.com/know-your-javascript-data-structures/
 
-Aberneithie, S. (2016, August 8). What are the real life applications of stack data structure? - Quora. Retrieved from https://www.quora.com/What-are-the-real-life-applications-of-stack-data-structure
+Aberneithie, S. (2016, August 8). What are the real-life applications of stack data structure? - Quora. Retrieved from https://www.quora.com/What-are-the-real-life-applications-of-stack-data-structure
 
 Kushagra7744. (2018, November 30). Applications of Hashing. Retrieved from https://www.geeksforgeeks.org/applications-of-hashing/
 

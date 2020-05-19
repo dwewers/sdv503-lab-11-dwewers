@@ -28,6 +28,8 @@ class MyLinkedList { //Creates a new class called MyLinkedClass
     }
 }
 console.log(new MyLinkedList('I hope this is correct'));
+console.log(new MyLinkedList('This Is test One'));
+console.log(new MyLinkedList('Wait another one?'));
 //  returns    MyLinkedList { head: { value: 'I hope this is correct', next: null } length: 1 }
 
 

@@ -66,8 +66,25 @@ Advantages and disadvantages of recursion
  Takes up more of the stack
  Will generally use more memory
  Every recursive call causes the stack to increase
- Large stack can cause crashes
+ Large stack can cause crashes (crash the program)
  Can often throw the StackOverflowException error when trying to process large sets
+
+ //Real world uses
+ We can use recursion with directory structure within a file system. We can use this method to find files, create directories, delete files and so on
+
+ Collision detecion in game development (Binary Space Partitioning(BSP) trees)
+
+ Functional programming Languages
+
+ XML, or anything that involves traversin a tree
+
+ Building a CMS for a website. Travesing from sub-pages back to the root (which could be the home page)
+
+ Looking up words in a dictionary
+
+ Business bosses giving commands and passing them down through the ranks
+ 
+ Russian Dolls
 
 _____________________________________________________________________
 //////////////////////////  Linked List  ////////////////////////////
@@ -508,3 +525,5 @@ Jeep, J. (2019, December 16). Implementing a Stack in JavaScript - Better Progra
 Fawcett, R. T. A. A. (2020, March 20). 7 JavaScript data structures you must know. Retrieved from https://www.educative.io/blog/javascript-data-structures
 
 Zakas, N. C. (2019, January 8). Computer science in JavaScript: Linked list. Retrieved from https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/
+
+Real-world examples of recursion. (2008, September 19). Retrieved from https://stackoverflow.com/questions/105838/real-world-examples-of-recursion

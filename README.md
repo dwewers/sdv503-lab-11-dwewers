@@ -15,7 +15,59 @@ opposite. The types are definced by the programmer, rather than the javascript l
 data structures, and dynamic data structures.
 
 There are several different types of Javascript data structures. These include structures such as Stack, Queue, linked list, Hash tables and trees.
+_____________________________________________________________________
+/////////////////////  Javascript Recursion  ////////////////////////
+We use a recursive function when we want a function call itself until we dont want it too. This could be finite, or infinitely. Generally when we write a recursive function, we
+will include a condition so that we can stop the recursion. If we were to miss out this condition, the function will loop indefinitely. A general way that we can write it so that
+it doesnt repeat indefinitely. looks like this:
 
+function recurse() {
+    if(condition) {
+    } else {
+        recurse();
+    }
+}
+We use these functions when we want to break down a larger issue into smaller ones. We will generally find recurse functions in binary structures such as Binary search trees or
+graphs, or in algorithms such as binary search and quicksort. We can use recurse functions for a variety of tasks such as decreasing a value from a specified number. If we want to count down
+from a specifc number, we can write it like this (executable code in recursive.js):
+
+function recursiveFunc(myNumber) {
+    
+let nextVal = myNumber - 1; 
+
+    if (nextVal > 0) { 
+        recursiveFunc(nextVal);
+    }
+    console.log(myNumber);
+}
+recursiveFunc(10); 
+
+
+PSEUDO code:
+Create recursive function with paramater
+create a new variable, and let it equal the parameter minus 1
+if the statement "new variable is greater than 0" is true, repeat
+end
+console log parameter
+end
+call function with set value of parameter
+
+Advantages and disadvantages of recursion
+ There are a few advantages and disadvantages of recursion. These include:
+
+ Advantages
+ It makes the algorithm easier for problems like tree traversal
+ Makes things easier to visualize 
+ It is the unique way of implementing a variable number of nested loops
+ Can reduce time to write and debug code
+
+ Disadvantages
+ Recursion is generally slower
+ Takes up more of the stack
+ Will generally use more memory
+ Every recursive call causes the stack to increase
+ Large stack can cause crashes
+ Can often throw the StackOverflowException error when trying to process large sets
 
 _____________________________________________________________________
 //////////////////////////  Linked List  ////////////////////////////
@@ -43,7 +95,7 @@ A way of looking at this looks like this.
 
 Head  -->  [10| ]  -->  [20| ]  -->  [30| ]  -->  [40| ]  -->  Null
 
-Here is an example of what it would look like in code:
+Here is an example of what it would look like in code (executable code in linked.js):
 
 class Node {
   constructor(data, next = null) {
@@ -132,6 +184,7 @@ Maintaining Directory names
 Performing arithmetic operations on long integers
 
 Examples of use could include things such as a previous and next page in a web browser.
+Other examples include music players with their previous and last song, and adding new songs to the queue
 
 ______________________________________________________________
 /////////////////////////  Stack  ////////////////////////////
@@ -454,3 +507,4 @@ Jeep, J. (2019, December 16). Implementing a Stack in JavaScript - Better Progra
 
 Fawcett, R. T. A. A. (2020, March 20). 7 JavaScript data structures you must know. Retrieved from https://www.educative.io/blog/javascript-data-structures
 
+Zakas, N. C. (2019, January 8). Computer science in JavaScript: Linked list. Retrieved from https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/

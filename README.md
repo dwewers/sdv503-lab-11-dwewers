@@ -27,6 +27,68 @@ class Stack{
     }
     peek(){//This checks the last added value to the stack
     }
+
+    Example Full
+
+    class Stack { //This is where we create the class Stack
+    constructor(){
+        this.data = [];
+        this.top = 0;
+    }
+    push(element) { //Thiis is where we add an element to the top of the class
+      this.data[this.top] = element;
+      this.top = this.top + 1;
+    }
+   length() { //This is where we return the length of the stack
+      return this.top;
+   }
+   peek() {//This checks the top element of the stack
+      return this.data[this.top-1];
+   }
+   isEmpty() {//This checks to see if there is any data in the 
+     return this.top === 0;
+   }
+   pop() {//This removes and returns the element at the top of the stack
+    if( this.isEmpty() === false ) {
+       this.top = this.top -1;
+       return this.data.pop(); // removes the last element
+     }
+   }
+   print() {//This is where we console log the elements of the stack
+      var top = this.top - 1; // because top points to index where new    element to be inserted
+      while(top >= 0) { // print upto 0th index
+          console.log(this.data[top]);
+           top--;
+       }
+    }
+    reverse() {//We can use recursion to reverse the order of the stack
+       this._reverse(this.top - 1 );
+    }
+    _reverse(index) {
+       if(index != 0) {
+          this._reverse(index-1);
+       }
+       console.log(this.data[index]);
+    }
+}
+
+    PSEUDO Code
+    Create a stack class
+    end
+    Insert an Element to the Top of Stack
+    end
+    Return the Length of the Stack
+    end
+    Get the Top Element of the Stack
+    end
+    Check If the Stack Is Empty
+    end
+    Delete Element at the Top of the Stack
+    end
+    Print the Elements of the Stack
+    end
+
+    
 }
 When would we use stack?
 During function calls
@@ -62,6 +124,89 @@ class Queue {
 enqueue -> | 3 | 2 | 1 | -> dequeue
            +---+---+---+
 As we can see, we will push something to the array, pushing 3 to the array above would remove 0 from the other end.
+
+Example of Queue:
+
+class Queue //This is where we create a new class Queue
+{ 
+    constructor() 
+    { 
+        this.items = []; //We use an array to implement a queue
+    } 
+enqueue(element) //Adds an element to the queue
+{     
+    // adding element to the queue 
+    this.items.push(element); 
+} 
+dequeue() //Removes an element from the queue
+{ 
+    if(this.isEmpty()) 
+        return "Underflow"; 
+    return this.items.shift(); 
+} 
+front() //returns the front element of the queue
+{ 
+    if(this.isEmpty()) 
+        return "No elements in Queue"; 
+    return this.items[0]; 
+}
+isEmpty() //Returns true if the queue is empty
+{ 
+    return this.items.length == 0; 
+} 
+printQueue() //Returns all the elements of an queue
+{ 
+    var str = ""; 
+    for(var i = 0; i < this.items.length; i++) 
+        str += this.items[i] +" "; 
+    return str; 
+} 
+
+var queue = new Queue(); //Creates an object for the queue class
+
+console.log(queue.dequeue()); //Test dequeue and pop on an empty queue 
+
+//This line returns true since we havent added anything to the queue yet
+console.log(queue.isEmpty()); 
+
+//The six lines below adds values to the queue
+//The queue will look like [111, 222, 333, 444, 555, 666]
+queue.enqueue(111); 
+queue.enqueue(222); 
+queue.enqueue(333); 
+queue.enqueue(444); 
+queue.enqueue(555); 
+queue.enqueue(666); 
+
+console.log(queue.front());   //This returns the value at the fron. In this case its 111
+console.log(queue.dequeue()); //This removes the first value from the queue. The cue will now be 
+                              //[222, 333, 444, 555, 666]
+console.log(queue.front());   //This returns the value at the fron. In this case it is now 222
+console.log(queue.dequeue()); /This removes the first value from the queue. The cue will now be 
+                              //[333, 444, 555, 666]
+console.log(queue.printQueue());// Returns the queue which now looks like : [333, 444, 555, 666]
+
+Pseudo Code:
+create a new class Queue
+end
+use an array to implement a queue
+end
+Removes an element from the queue
+end
+returns the front element of the queue
+end
+Returns true if the queue is empty
+end
+Returns all the elements of an queue
+end
+Create an object for the queue class
+
+Test dequeue and pop on an empty queue
+
+add values to the queue
+
+console log desired outcomes
+
 
 Applications of Queue
 We use queue whenever we want to organise a group of items in order from first in to last, where the first one that comes in is the first one out. You can imagine this like people lining up. The person that is first in the line was the first person to line up. This means that they will be the first to leave the line. Another place this idea can be used is in printing files at a printer. if a bunch of people were to send their files at various times, the queue would be in sequence of who was fastest, second fastest, and so on
@@ -200,6 +345,22 @@ class HashTable {
     return sum % n;
   }
 }
+
+PSEUDO code:
+create class for hashtable
+end
+insert values
+end
+Create function for hash
+set the default value of sum be 0
+increment the value of i by one until the length of the string is met
+Add the value of i multiplied by three to sum(0)
+end
+return the value of sum division remainder of n
+end
+
+
+
 Applications of hash tables include:
 Message Digest
 Password Verification
@@ -239,4 +400,11 @@ Jain, S. (2018, November 6). What are the applications of queues? - Quora. Retri
 Mittal, D. (2018, August 31). Applications of linked list data structure. Retrieved from https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/
 
 Yarovoi, E. (2016, March 12). What are some practical applications of binary search trees? - Quora. Retrieved from https://www.quora.com/What-are-some-practical-applications-of-binary-search-trees
+
+Jeep, J. (2019, December 16). Implementing a Stack in JavaScript - Better Programming. Retrieved from https://medium.com/better-programming/implementing-a-stack-in-javascript-73d1aa0483c1
+
+
+
+
+
 
